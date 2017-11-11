@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "scuumo\\": "src/app/"
+            "Scuumo\\": "src/app/"
         }
     }
 }
