@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-    bootstrap="bootstrap.php"
+    bootstrap="./tests/phpunit.bootstrap.php"
     processIsolation="false"
     verbose="true"
     strict="false"
     colors="true">
     <testsuites>
         <testsuite name="PHPUnit">
-            <directory>tests</directory>
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="build/coverage"/>
+    </logging>
 </phpunit>
